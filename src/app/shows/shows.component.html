@@ -7,6 +7,13 @@
   <label>Show description:
     <input #showDescription />
   </label>
+  <label>Show price:
+      <input #showPrice />
+    </label>
+    <label>Show genre:
+      <input #showGenre />
+    </label>
+
   <!-- (click) passes input value to add() and then clears the input -->
   <button (click)="add(showName.value, showDescription.value); showName.value=''; showDescription.value=''">
     add

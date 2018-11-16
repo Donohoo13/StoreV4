@@ -9,6 +9,12 @@
     <label>description:
       <input [(ngModel)]="show.description" placeholder="description"/>
     </label>
+    <label>price:
+      <input type="number" [(ngModel)]="show.price" placeholder="price"/>
+    </label>
+    <label>genre:
+      <input [(ngModel)]="show.genre" placeholder="genre"/>
+    </label>
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
