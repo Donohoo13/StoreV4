@@ -13,7 +13,7 @@ export class AddShowComponent implements OnInit {
 
   ngOnInit() {
   }
-  add(_id, name: string, description: string, price: number, genre: string): void {
+  add(_id, name: String, description: String, price: Number, genre: String): void {
     name = name.trim();
     if (!name) { return; }
     this.showService.addItem({_id, name, description, price, genre } as Show)
