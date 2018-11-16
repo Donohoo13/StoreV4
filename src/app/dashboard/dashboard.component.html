@@ -1,0 +1,9 @@
+<h3>Top Shows</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let show of shows" class="col-1-4"
+      routerLink="/detail/{{show._id}}">
+    <div class="module hero">
+      <h4>{{show.name}}</h4>
+    </div>
+  </a>
+</div>
