@@ -1,0 +1,21 @@
+<div class="body">
+  <label>Show name:
+    <input #showName />
+  </label>
+  <label>Show description:
+    <input #showDescription />
+  </label>
+  <label>Show price:
+      <input #showPrice />
+    </label>
+    <label>Show genre:
+      <input #showGenre />
+    </label>
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(null, showName.value, showDescription.value, showPrice.value, showGenre.value);
+   showName.value=''; showDescription.value=''; showPrice.value=''; showGenre.value='';">
+    add
+  </button>
+</div>
+<app-messages></app-messages>

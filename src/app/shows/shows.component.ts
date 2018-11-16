@@ -14,17 +14,10 @@ export class ShowsComponent implements OnInit {
   ngOnInit() {
     this.getShows();
   }
+  
   getShows(): void {
     this.showService.getItems()
         .subscribe(shows => this.shows = shows);
-  }
-  add(_id, name: string, description: string, price: number, genre: string): void {
-    name = name.trim();
-    if (!name) { return; }
-    this.showService.addItem({_id, name, description, price, genre } as Show)
-      .subscribe(item => {
-        this.shows.push(item);
-      });
   }
 
   delete(show: Show): void {
