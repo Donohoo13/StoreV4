@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {Show} from '../show';
-import {ShowService} from '../shows.service';
+import { Show } from '../show';
+import { ShowService } from '../shows.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-show-detail',
   templateUrl: './show-detail.component.html',
-  styleUrls: ['./show-detail.component.css']
+  styleUrls: ['./show-detail.component.scss']
 })
 export class ShowDetailComponent implements OnInit {
   show: Show;
@@ -33,4 +33,8 @@ export class ShowDetailComponent implements OnInit {
     this.showService.updateItem(this.show)
       .subscribe(() => this.goBack());
   }
+  // delete(show: Show): void {
+  //   this.shows = this.shows.filter(h => h !== show);
+  //   this.showService.deleteItem(show).subscribe();
+  // }
 }

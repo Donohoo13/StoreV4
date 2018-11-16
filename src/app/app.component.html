@@ -1,7 +1,38 @@
-<h1>{{ title }}</h1>
+<!-- <h1>{{ title }}</h1>
 <nav>
     <a routerLink="/dashboard">Dashboard</a>
     <a routerLink="/shows">Shows</a>
 </nav>
 <router-outlet></router-outlet>
-<app-messages></app-messages>
+<app-messages></app-messages> -->
+
+
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-5 navbar-light blue lighten-2" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" routerLink="/" >{{title}}</a></mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link waves-light" routerLink="/dashboard" mdbWavesEffect>Products Dashboard<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" routerLink="/shows" mdbWavesEffect>Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" routerLink="" mdbWavesEffect>Pricing</a>
+            </li>
+        </ul>
+        <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  
+  </mdb-navbar>
+  <!--/.Navbar-->
+<router-outlet></router-outlet>
+<!-- <app-messages></app-messages> -->

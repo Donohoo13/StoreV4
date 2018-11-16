@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Show} from '../show';
-import {ShowService} from '../shows.service';
+import { Show } from '../show';
+import { ShowService } from '../shows.service';
 
 @Component({
   selector: 'app-shows',
