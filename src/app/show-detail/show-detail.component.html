@@ -1,6 +1,6 @@
 <div *ngIf="show">
   <h2>{{show.name | uppercase}} Details</h2>
-  <!-- <div><span>id: </span>{{show._id}}</div> -->
+  <div><span>id: </span>{{show._id}}</div>
   <div>
     <label>name:
       <input [(ngModel)]="show.name" placeholder="name"/>
@@ -19,7 +19,5 @@
     </label>
   </div>
   <button (click)="goBack()">go back</button>
-  <button (click)="saveEdit()">save</button> 
-  <!-- <button class="delete" title="delete show"
-      (click)="delete(show)">x</button> -->
+  <button (click)="saveEdit()">save</button>
 </div>

@@ -1,20 +1,10 @@
-<!-- Navbar -->
-<mdb-navbar
-  SideClass="navbar navbar-5 navbar-light blue lighten-2"
-  [containerInside]="true"
->
-  <!-- Navbar brand -->
+<mdb-navbar SideClass="navbar navbar-5 navbar-light blue lighten-2" [containerInside]="true">
   <mdb-navbar-brand>
     <a class="navbar-brand" routerLink="/">{{ title }}</a></mdb-navbar-brand>
-  <!-- Collapsible content -->
   <links>
-    <!-- Links -->
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link waves-light" routerLink="/shows" mdbWavesEffect>Products Page</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link waves-light" routerLink="/dashboard" mdbWavesEffect>Dashboard</a>
       </li>
       <li class="nav-item">
         <a class="nav-link waves-light" routerLink="/addshow" mdbWavesEffect>Add Show</a>
@@ -23,10 +13,7 @@
         <a class="nav-link waves-light" routerLink="/contact" mdbWavesEffect>Contact</a>
       </li>
     </ul>
-    <!-- Links -->
   </links>
-  <!-- Collapsible content -->
 </mdb-navbar>
-<!-- /.Navbar -->
 <router-outlet></router-outlet>
 <!-- <app-messages></app-messages> -->
