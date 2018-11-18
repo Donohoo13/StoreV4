@@ -29,7 +29,7 @@ export class ShowDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-  save(): void {
+  saveEdit(): void {
     this.showService.updateItem(this.show)
       .subscribe(() => this.goBack());
   }

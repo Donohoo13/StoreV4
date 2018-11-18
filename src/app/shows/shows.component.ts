@@ -5,11 +5,12 @@ import { ShowService } from '../shows.service';
 @Component({
   selector: 'app-shows',
   templateUrl: './shows.component.html',
-  styleUrls: ['./shows.component.css']
+  styleUrls: ['./shows.component.scss']
 })
 export class ShowsComponent implements OnInit {
   shows: Show[];
   constructor(private showService: ShowService) { }
+  // headElements = ['ID', 'Show', 'Description', 'Price', 'Genre', 'Edit', 'Delete'];
 
   ngOnInit() {
     this.getShows();

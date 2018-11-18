@@ -1,0 +1,33 @@
+.body {
+    max-width: 86%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.card {
+    // display: flex;
+    min-width: 28%;
+    max-width: 100%;
+    flex-flow: row wrap;
+    box-shadow: none;
+    margin-bottom: .5em;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -.2em;
+    margin-top: -1em;
+}
+
+.fa {
+    color: rgb(81, 178, 252);
+}
+
+.title {
+    text-align: center;
+}
+
+#name {
+    color: rgb(81, 178, 252);
+}

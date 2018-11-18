@@ -1,4 +1,4 @@
-<div class="body">
+<!-- <div class="body">
   <h2>My Shows</h2>
 
 <ul class="heroes">
@@ -10,4 +10,35 @@
       (click)="delete(show)">x</button>
   </li>
   </ul>
+  </div> -->
+  
+<div class="body">
+<div class="card-deck card">
+    <!-- Card -->
+    <mdb-card *ngFor="let show of shows">
+      <div class="view overlay waves-light" mdbWavesEffect>
+        <!-- Card img -->
+        <a>
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+      <!--Card content-->
+      <mdb-card-body>
+        <div class="info">
+          <a class="edit" routerLink="/detail/{{show._id}}"><i class="fa fa-pencil"></i></a>
+          <p id="price"><strong>${{show.price}}</strong></p>
+          <a class="delete" title="delete show"
+          (click)="delete(show)"><i class="fa fa-trash-o"></i></a>
+        </div>
+        <!--Title-->
+        <mdb-card-title>
+            <h4 id="name" class="title">{{show.name}}</h4>
+            <h5 class="title">{{show.genre}}</h5>
+        </mdb-card-title>
+  
+        <!--Text-->
+        <mdb-card-text>{{show.description}}</mdb-card-text>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
   </div>
