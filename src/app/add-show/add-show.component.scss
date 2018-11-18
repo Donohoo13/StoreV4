@@ -8,3 +8,19 @@
     text-align: center;
     color: rgb(81, 178, 252);
 }
+
+#bottomRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+button {
+    margin: center;
+    min-width: 20%;
+}
+
+.button {
+    margin: center;
+    min-width: 20%;
+}

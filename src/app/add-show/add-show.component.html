@@ -64,8 +64,11 @@
   <!-- </form> -->
   <!-- Material column sizing form -->
 <div id="bottomRow">
-    <button (click)="add(null, showName.value, showDescription.value, showPrice.value, showGenre.value);
-    showName.value=''; showDescription.value=''; showPrice.value=''; showGenre.value='';">Add
-   </button>
+      <button type="button" class="btn-sm" mdbBtn color="dark" mdbWavesEffect
+      (click)="add(null, showName.value, showDescription.value, showPrice.value, showGenre.value);
+      showName.value=''; showDescription.value=''; showPrice.value=''; showGenre.value='';">Add
+      </button>
+    <app-messages></app-messages>
+    <button type="button" routerLink="/shows" class="btn-sm" mdbBtn color="dark" mdbWavesEffect>Back to Products</button>
 </div>
 </div>

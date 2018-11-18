@@ -15,9 +15,10 @@
 -->
 
 <div class="body">
-    <button mdbBtn type="button" color="info" outline="true" mdbWavesEffect>
-      <a class="addNewBtn" routerLink="/addshow">Add New Show</a>
-    </button>
+  <div id="addNewBtn">
+    <button mdbBtn type="button" color="info" outline="true"
+    mdbWavesEffect routerLink="/addshow">Add New Show</button>
+  </div>
   <div class="card-deck card">
     <mdb-card *ngFor="let show of shows">
       <mdb-card-body>
