@@ -1,45 +1,42 @@
 <div class="body">
-    <h1 id="homeTitle">Welcome to our store!</h1>
+  <h1 id="homeTitle">Welcome to our store!</h1>
   <div class="carousel">
-    <!-- Carousel Wrapper -->
     <mdb-carousel
-      [isControls]="true"
-      class="carousel slide carousel-fade"
-
-      [animation]="'fade'"
-    >
-      <!-- First slide -->
-      <mdb-carousel-item>
-        <img
-          class="d-block w-100"
-          src="https://www.commodorewaves.com/wp-content/uploads/2017/11/Movie-Night.jpg"
-          alt="First slide"
-        />
-      </mdb-carousel-item>
-      <!-- /First slide -->
-      <!-- Second slide -->
-      <mdb-carousel-item>
-        <img
-          class="d-block w-100"
-          src="http://www.nilasphere.com/wp-content/uploads/2018/03/movies.gif"
-          alt="Second slide"
-        />
-      </mdb-carousel-item>
-      <!-- /Second slide -->
-      <!-- Third slide -->
-      <mdb-carousel-item>
-        <img
-          class="d-block w-100"
-          src="https://berkeleylibrarysc.org/wp-content/uploads/2017/08/movie-film-video-production-ss-1920-800x450.jpg"
-          alt="Third slide"
-        />
-      </mdb-carousel-item>
-      <!-- /Third slide -->
+      [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+    <mdb-carousel-item>
+      <img
+        class="d-block w-100"
+        src="https://www.commodorewaves.com/wp-content/uploads/2017/11/Movie-Night.jpg"
+        alt="First slide"/>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <img
+        class="d-block w-100"
+        src="http://www.nilasphere.com/wp-content/uploads/2018/03/movies.gif"
+        alt="Second slide"/>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <img
+        class="d-block w-100"
+        src="https://berkeleylibrarysc.org/wp-content/uploads/2017/08/movie-film-video-production-ss-1920-800x450.jpg"
+        alt="Third slide"/>
+    </mdb-carousel-item>
     </mdb-carousel>
-    <!-- /.Carousel Wrapper -->
   </div>
   <div class="about">
       <h3 id="aboutTitle">About this site</h3>
-      <p>This site was built by a <a id="helioTag" href="https://heliotraining.com/" target="_blank" rel="noopener noreferrer">Helio Training</a> team of four.</p>
+      <p>This site was built by a <a id="helioTag" href="https://heliotraining.com/" target="_blank" rel="noopener noreferrer">Helio Training</a>
+        team of four.  The project saw many versions until we got to final product of this store.  Angular is an extremely powerful programming
+        language which can be a double edged sword.  Our biggest hiccup we ran into was getting the HTTP Client to run
+        properly.  The finished product however makes good use of the following: 
+        <span id="list">
+          <ul>
+            <li>*ngModal</li> <li>HTTP Client</li> <li>*ngFor</li> <li>Reactive Forms</li>
+            <li>Routing</li> <li>Services</li> <li>Modals</li> <li>API with Hapi & Mongoose</li>
+            <li>Database with MongoDB</li> <li>Styling with MDBootstrap</li>
+          </ul>
+        </span>
+        You can also contact each one of us directly <a id="contactTag" routerLink="/contact">here.</a>
+      </p>
   </div>
 </div>

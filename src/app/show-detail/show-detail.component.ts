@@ -33,8 +33,4 @@ export class ShowDetailComponent implements OnInit {
     this.showService.updateItem(this.show)
       .subscribe(() => this.goBack());
   }
-  // delete(show: Show): void {
-  //   this.shows = this.shows.filter(h => h !== show);
-  //   this.showService.deleteItem(show).subscribe();
-  // }
 }

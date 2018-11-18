@@ -20,38 +20,24 @@
 </div>
 <app-messages></app-messages>-->
 
-<!-- Material column sizing form -->
 <div class="body">
   <h2 id="addNewTitle">Add New Show</h2>
-<!-- <form> -->
-    <!-- Grid row -->
     <div class="form-row">
-      <!-- Grid column -->
       <div class="col-5">
-        <!-- Material input -->
         <div class="md-form">
           <input mdbInputDirective #showName type="text" class="form-control" placeholder="Show Name"/>
         </div>
       </div>
-      <!-- Grid column -->
-  
-      <!-- Grid column -->
       <div class="col">
-        <!-- Material input -->
         <div class="md-form">
           <input mdbInputDirective #showGenre type="text" class="form-control" placeholder="Genre"/>
         </div>
       </div>
-      <!-- Grid column -->
-  
-      <!-- Grid column -->
       <div class="col-2">
-        <!-- Material input -->
         <div class="md-form">
           <input mdbInputDirective #showPrice type="number" class="form-control" placeholder="Price"/>
         </div>
       </div>
-      <!-- Grid column -->
     </div>
     <div class="form-row">
       <div class="col">
@@ -60,15 +46,12 @@
       </div>
     </div>
     </div>
-    <!-- Grid row -->
-  <!-- </form> -->
-  <!-- Material column sizing form -->
 <div id="bottomRow">
       <button type="button" class="btn-sm" mdbBtn color="dark" mdbWavesEffect
       (click)="add(null, showName.value, showDescription.value, showPrice.value, showGenre.value);
       showName.value=''; showDescription.value=''; showPrice.value=''; showGenre.value='';">Add
       </button>
-    <app-messages></app-messages>
     <button type="button" routerLink="/shows" class="btn-sm" mdbBtn color="dark" mdbWavesEffect>Back to Products</button>
 </div>
+<div id="messages"><app-messages></app-messages></div>
 </div>

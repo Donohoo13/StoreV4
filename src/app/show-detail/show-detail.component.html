@@ -1,4 +1,4 @@
-<div *ngIf="show">
+<!-- <div *ngIf="show">
   <h2>{{show.name | uppercase}} Details</h2>
   <div><span>id: </span>{{show._id}}</div>
   <div>
@@ -20,4 +20,38 @@
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="saveEdit()">save</button>
-</div>
+</div> -->
+
+<div class="body" *ngIf="show">
+    <h2 id="details">{{show.name}} Details</h2>
+      <div class="form-row">
+        <div class="col-5">
+          <div class="md-form">
+            <input [(ngModel)]="show.name" type="text" class="form-control" placeholder="Show Name"/>
+          </div>
+        </div>
+        <div class="col">
+          <div class="md-form">
+            <input [(ngModel)]="show.genre" type="text" class="form-control" placeholder="Genre"/>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="md-form">
+            <input [(ngModel)]="show.price" type="number" class="form-control" placeholder="Price"/>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col">
+        <div class="md-form">
+          <input [(ngModel)]="show.description" type="text" class="form-control" placeholder="Description"/>
+        </div>
+      </div>
+      </div>
+      <div id="bottomRow">
+          <button (click)="saveEdit()" type="button" routerLink="/shows" routerLink="/shows"
+          class="btn-sm" mdbBtn color="dark" mdbWavesEffect>Save</button>
+          <button (click)="goBack()" type="button" routerLink="/shows"
+          class="btn-sm" mdbBtn color="dark" mdbWavesEffect>Back to Products</button>
+      </div>
+      </div>
